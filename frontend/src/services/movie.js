@@ -2,7 +2,7 @@ import http from '../http-common';
 
 class MovieDataService{
 
-    getAll(page = 0) {
+    getAll(page) {
         return http.get(`?page=${page}`);
       }
     
@@ -10,7 +10,7 @@ class MovieDataService{
         return http.get(`/id/${id}`);
       }
     
-      find(query, by = "name", page = 0) {
+      find(query, by = "name", page) {
         return http.get(`?${by}=${query}&page=${page}`);
       } 
     

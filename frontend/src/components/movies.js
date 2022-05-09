@@ -45,11 +45,6 @@ const Movie = props => {
       {movie ? (
         <div>
           <h5>{movie.title}</h5>
-      
-          {/* <p>
-            <strong>Cuisine: </strong>{restaurant.cuisine}<br/>
-            <strong>Address: </strong>{restaurant.address.building} {restaurant.address.street}, {restaurant.address.zipcode}
-          </p> */}
           <strong>Popularity : </strong>{parseFloat(movie.popularity).toFixed(2)}<br/>
           <strong>release_date : </strong>{movie.release_date}<br/>
           <strong>Rating : </strong>{movie.vote_average}<br/>

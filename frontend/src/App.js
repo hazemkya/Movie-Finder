@@ -25,10 +25,10 @@ function App() {
 
     <div className="App">
             <nav className="navbar navbar-expand navbar-dark bg-dark">
-        <a href="/movies" className="navbar-brand">
+        <a href="/movies" className="navbar-brand ">
             Movies Finder
         </a>
-        <div className="navbar-nav mr-auto">
+        <div className="navbar-nav ml-auto">
           <li className="nav-item">
             <Link to={"/movies"} className="nav-link">
               Movies

@@ -16,7 +16,7 @@ export default class MoviesDAO {
     }
     static async getMovies({filters = null,
                             page = 0,
-                            moviesPerPage = 10,} = {}){
+                            moviesPerPage = 12,} = {}){
         let query
         if (filters) {
           if ("title" in filters) {
@@ -26,7 +26,7 @@ export default class MoviesDAO {
         let cursor
     
         try {
-        cursor = await movies.find(query)
+        cursor = await movies.find(query).sort({"popularity" : -1})
         } catch (e) {
         console.error(`Unable to issue find command, ${e}`)
         return { moviessList: [], totalNumMovies: 0 }
