@@ -9,4 +9,4 @@ Nodejs
 
 
 This app is hosted in Mongo Realm, hosting frontend files, and using serverless cloud functions for backend,
-it's accessible via this link: movie-finder-xnlkp.mongodbstitch.com
+it's accessible via this link: https://movie-finder-xnlkp.mongodbstitch.com/
